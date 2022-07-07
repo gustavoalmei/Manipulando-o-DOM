@@ -59,3 +59,8 @@ function atualizaInfo(operacao, peca){
     }
   })
 }
+
+function alterarRobo(selecao){
+  let robotron = document.querySelector("[data-robo]")
+  robotron.src = `img\\${selecao.dataset.cor}\\${selecao.dataset.cor}.png`
+}
